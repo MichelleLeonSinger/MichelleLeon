@@ -25,15 +25,15 @@ body {
 .container {
   text-align: center;
   padding: 40px 20px;
-  max-width: 420px;
+  max-width: 600px;   /* más aire para el logo */
   width: 100%;
 }
 
 /* LOGO PNG */
 .logo-img {
-  width: 260px;
-  max-width: 80%;
-  margin-bottom: 30px;
+  width: 420px;        /* MUCHO más grande */
+  max-width: 100%;     /* Sin límite artificial */
+  margin-bottom: 40px;
 }
 
 /* TEXTO */
@@ -86,11 +86,13 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 480px) {
-  .iconos {
-    gap: 35px;
+  .logo-img {
+    width: 360px;
   }
 
-  .logo-img {
-    width: 220px;
+  .container {
+    max-width: 100%;
   }
 }
+
+
