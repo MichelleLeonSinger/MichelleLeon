@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Repertorio | Michelle Leon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="logo">Repertorio</h1>
+
+    <p class="descripcion">
+      Documento actualizado automáticamente.
+    </p>
+
+    <button class="btn" onclick="recargarPDF()">Actualizar repertorio</button>
+
+    <iframe
+      id="visorPDF"
+      width="100%"
+      height="500px"
+      style="margin-top:20px; border:none;">
+    </iframe>
+
+    <br><br>
+    <a href="index.html" class="btn">Volver</a>
+  </div>
+
+  <script>
+    function recargarPDF() {
+      const t = new Date().getTime();
+      document.getElementById("visorPDF").src =
+        "repertorio.pdf?v=" + t;
+    }
+
+    recargarPDF();
+  </script>
+
+</body>
+</html>
