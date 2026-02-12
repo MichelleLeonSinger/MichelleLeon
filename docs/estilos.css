@@ -19,7 +19,7 @@ body {
     #140006 75%
   );
   color: #ffffff;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -150,6 +150,7 @@ body {
   }
 
 }
+
 
 
 
