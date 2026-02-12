@@ -18,10 +18,9 @@ body {
   font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Mejor composición visual */
+  align-items: flex-start;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .container {
   text-align: center;
   padding: 60px 20px 40px;
@@ -30,32 +29,36 @@ body {
   margin-top: 40px;
 }
 
-/* LOGO */
 .logo-img {
   width: 520px;
   max-width: 100%;
   height: auto;
-  margin-bottom: 55px; /* Más aire */
+  margin-bottom: 55px;
 }
 
-/* TEXTO */
 .descripcion {
   font-size: 16px;
   line-height: 1.6;
   opacity: 0.9;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
-/* ICONOS */
-.iconos {
+/* BLOQUE ICONO + BOTÓN */
+.acciones {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-bottom: 50px;
+  gap: 80px;
+}
+
+.accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
 
 .icono {
-  font-size: 42px;
+  font-size: 56px;
   color: white;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -65,17 +68,9 @@ body {
   opacity: 0.85;
 }
 
-/* BOTONES */
-.botones {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .btn {
   border: 1px solid white;
-  padding: 12px 22px;
+  padding: 12px 24px;
   text-decoration: none;
   color: white;
   font-size: 14px;
@@ -108,11 +103,17 @@ body {
     letter-spacing: 0.3px;
   }
 
+  .acciones {
+    gap: 50px;
+  }
+
   .icono {
-    font-size: 46px; /* Más táctil */
+    font-size: 60px;
   }
 
 }
+
+
 
 
 
