@@ -25,16 +25,19 @@ body {
 .container {
   text-align: center;
   padding: 40px 20px;
-  max-width: 600px;   /* más aire para el logo */
+  max-width: 700px;   /* necesario para logos horizontales */
   width: 100%;
 }
 
+
 /* LOGO PNG */
 .logo-img {
-  width: 420px;        /* MUCHO más grande */
-  max-width: 100%;     /* Sin límite artificial */
+  width: 520px;        /* Tamaño fuerte para horizontal */
+  max-width: 100%;
+  height: auto;
   margin-bottom: 40px;
 }
+
 
 /* TEXTO */
 .descripcion {
@@ -87,12 +90,11 @@ body {
 /* RESPONSIVE */
 @media (max-width: 480px) {
   .logo-img {
-    width: 360px;
+    width: 420px;
   }
 
   .container {
     max-width: 100%;
   }
 }
-
 
