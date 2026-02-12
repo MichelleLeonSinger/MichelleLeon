@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 
+/* ========================= */
+/* BASE */
+/* ========================= */
+
 body {
-  min-height: 100vh;
+  min-height: 100svh; /* viewport real en móvil */
   background: radial-gradient(
     circle at top right,
     #5a0012 0%,
@@ -19,7 +23,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  overflow-x: hidden;
 }
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
 
 .container {
   text-align: center;
@@ -29,7 +38,10 @@ body {
   margin-top: 40px;
 }
 
+/* ========================= */
 /* LOGO */
+/* ========================= */
+
 .logo-img {
   width: 520px;
   max-width: 100%;
@@ -37,20 +49,26 @@ body {
   margin-bottom: 55px;
 }
 
+/* ========================= */
 /* TEXTO */
+/* ========================= */
+
 .descripcion {
   font-size: 16px;
   line-height: 1.6;
   opacity: 0.9;
-  margin-bottom: 60px; /* MÁS espacio antes de íconos */
+  margin-bottom: 60px;
 }
 
+/* ========================= */
 /* ICONOS */
+/* ========================= */
+
 .iconos {
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin-bottom: 70px; /* MÁS separación de botones */
+  margin-bottom: 70px;
 }
 
 .icono {
@@ -64,7 +82,10 @@ body {
   opacity: 0.85;
 }
 
+/* ========================= */
 /* BOTONES */
+/* ========================= */
+
 .botones {
   display: flex;
   justify-content: center;
@@ -79,7 +100,7 @@ body {
   color: white;
   font-size: 14px;
   letter-spacing: 0.6px;
-  border-radius: 30px; /* 🔥 BORDES SUAVES */
+  border-radius: 30px;
   transition: all 0.3s ease;
 }
 
@@ -98,21 +119,38 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
 
+  .container {
+    padding: 40px 20px 30px;
+    margin-top: 20px;
+  }
+
   .logo-img {
-    width: 420px;
+    width: 400px;
+    margin-bottom: 40px;
   }
 
   .descripcion {
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.6;
     letter-spacing: 0.3px;
+    margin-bottom: 40px;
+  }
+
+  .iconos {
+    gap: 50px;
+    margin-bottom: 45px;
   }
 
   .icono {
-    font-size: 48px;
+    font-size: 46px;
+  }
+
+  .botones {
+    gap: 16px;
   }
 
 }
+
 
 
 
