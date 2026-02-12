@@ -89,7 +89,12 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 100%) {
+@media (max-width: 480px) {
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   .logo-img {
     width: 420px;
   }
@@ -98,15 +103,17 @@ body {
     max-width: 100%;
   }
 
-    body {
-    font-family: 'Montserrat', sans-serif;
-  }
-
   .descripcion {
     font-size: 15px;
     line-height: 1.6;
   }
+
 }
+
+
+
+
+
 
 
 
