@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -19,33 +18,32 @@ body {
   font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Mejor composición visual */
 }
 
 /* CONTENEDOR PRINCIPAL */
 .container {
   text-align: center;
-  padding: 40px 20px;
-  max-width: 700px;   /* necesario para logos horizontales */
+  padding: 60px 20px 40px;
+  max-width: 700px;
   width: 100%;
+  margin-top: 40px;
 }
 
-
-/* LOGO PNG */
+/* LOGO */
 .logo-img {
-  width: 520px;        /* Tamaño fuerte para horizontal */
+  width: 520px;
   max-width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 55px; /* Más aire */
 }
-
 
 /* TEXTO */
 .descripcion {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   opacity: 0.9;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 /* ICONOS */
@@ -53,18 +51,18 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .icono {
-  font-size: 40px;
+  font-size: 42px;
   color: white;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .icono:hover {
   transform: scale(1.15);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* BOTONES */
@@ -72,23 +70,28 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
   border: 1px solid white;
-  padding: 10px 18px;
+  padding: 12px 22px;
   text-decoration: none;
   color: white;
   font-size: 14px;
+  letter-spacing: 0.5px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   color: #140006;
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* RESPONSIVE – CELULAR */
+/* ========================= */
+
 @media (max-width: 480px) {
 
   body {
@@ -99,13 +102,14 @@ body {
     width: 420px;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
   .descripcion {
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+  }
+
+  .icono {
+    font-size: 46px; /* Más táctil */
   }
 
 }
